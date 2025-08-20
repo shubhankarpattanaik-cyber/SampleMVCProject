@@ -26,3 +26,11 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Publish
+      run: dotnet publish ./SampleMVCProject/SampleMVCProject.csproj -c Release -o publish_output
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: drop
+        path: ./deploy_package
