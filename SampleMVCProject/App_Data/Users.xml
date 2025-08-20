@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRegisterViewModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RegisterViewModel>
+    <Name>Shubha</Name>
+    <Email>shubhankar.pattanaik@gmail.com</Email>
+    <Password>Shubha123</Password>
+    <ConfirmPassword>Shubha123</ConfirmPassword>
+  </RegisterViewModel>
+</ArrayOfRegisterViewModel>
