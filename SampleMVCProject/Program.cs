@@ -5,6 +5,14 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+// Get port from environment variable (Elastic Beanstalk sets this)
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+
+// Configure Kestrel / URLs
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+
+app.MapGet("/", () => "Hello from Elastic Beanstalk!");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -23,5 +31,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Register}/{id?}");
+
 
 app.Run();
