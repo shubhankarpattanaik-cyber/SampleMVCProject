@@ -6,7 +6,7 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 // Get port from environment variable (Elastic Beanstalk sets this)
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "80";
 
 // Configure Kestrel / URLs
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
