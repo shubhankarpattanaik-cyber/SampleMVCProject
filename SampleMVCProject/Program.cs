@@ -11,7 +11,7 @@ var port = Environment.GetEnvironmentVariable("PORT") ?? "80";
 // Configure Kestrel / URLs
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
-app.MapGet("/", () => "Hello from Elastic Beanstalk!");
+//app.MapGet("/", () => "Hello from Elastic Beanstalk!");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
