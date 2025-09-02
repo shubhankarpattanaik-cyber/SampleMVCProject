@@ -3,7 +3,21 @@
   <RegisterViewModel>
     <Name>Shubha</Name>
     <Email>shubhankar.pattanaik@gmail.com</Email>
+    <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
     <Password>Shubha123</Password>
     <ConfirmPassword>Shubha123</ConfirmPassword>
+  </RegisterViewModel>
+  <RegisterViewModel>
+    <Name>Ashish3</Name>
+    <Email>ashish2@gmail.com</Email>
+    <PhoneNumber>9700269987</PhoneNumber>
+    <DateOfBirth>2002-01-02T00:00:00</DateOfBirth>
+    <Gender>Male</Gender>
+    <Address>New Delhi</Address>
+    <Country>India</Country>
+    <State>Delhi</State>
+    <City>Delhi</City>
+    <Password>Shubha</Password>
+    <ConfirmPassword>Shubha</ConfirmPassword>
   </RegisterViewModel>
 </ArrayOfRegisterViewModel>
